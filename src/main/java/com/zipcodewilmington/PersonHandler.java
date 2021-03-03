@@ -13,14 +13,14 @@ public class PersonHandler {
     }
 
     public String whileLoop() {
-        StringBuilder result = new StringBuilder();
+        StringBuilder stringRepresentation = new StringBuilder();
         int counter = 0;
         while (counter < personArray.length){
-            Person newStr =personArray[counter];
-            result.append(newStr);
+            Person currentPerson =personArray[counter];
+            stringRepresentation.append(currentPerson);
             counter ++;
         }
-        String output = result.toString();
+        String output = stringRepresentation.toString();
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
@@ -34,14 +34,14 @@ public class PersonHandler {
     }
 
     public String forLoop() {
-        StringBuilder result = new StringBuilder();
+        StringBuilder stringRepresentation = new StringBuilder();
         int counter = 0;
         for(counter=0; counter< personArray.length;counter++)
         {
-            Person newStr= personArray[counter];
-            result.append(newStr);
+            Person currentPerson= personArray[counter];
+            stringRepresentation.append(currentPerson);
         }
-        String output=result.toString();
+        String output=stringRepresentation.toString();
         // identify initial value
         // identify terminal condition
         // identify increment
@@ -59,13 +59,13 @@ public class PersonHandler {
 
 
     public String forEachLoop() {
-        StringBuilder result = new StringBuilder();
+        StringBuilder stringRepresentation = new StringBuilder();
         int counter = 0;
         for(counter=0;counter< personArray.length;counter++){
-            Person newStr=personArray[counter];
-            result.append(newStr);
+            Person currentPerson=personArray[counter];
+            stringRepresentation.append(currentPerson);
         }
-        String output=result.toString();
+        String output=stringRepresentation.toString();
         // identify array's type
         // identify array's variable-name
 
