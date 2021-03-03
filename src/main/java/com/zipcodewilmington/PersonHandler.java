@@ -1,5 +1,7 @@
 package com.zipcodewilmington;
 
+//import com.sun.org.apache.xpath.internal.operations.String;
+
 /**
  * Created by leon on 1/24/18.
  */
@@ -11,7 +13,14 @@ public class PersonHandler {
     }
 
     public String whileLoop() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
+        int counter = 0;
+        while (counter < personArray.length){
+            Person newStr =personArray[counter];
+            result.append(newStr);
+            counter ++;
+        }
+        String output = result.toString();
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
@@ -21,13 +30,18 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
-        return result;
+        return output;
     }
 
-
-
     public String forLoop() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
+        int counter = 0;
+        for(counter=0; counter< personArray.length;counter++)
+        {
+            Person newStr= personArray[counter];
+            result.append(newStr);
+        }
+        String output=result.toString();
         // identify initial value
         // identify terminal condition
         // identify increment
@@ -39,13 +53,19 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
-        return result;
+        return output;
     }
 
 
 
     public String forEachLoop() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
+        int counter = 0;
+        for(counter=0;counter< personArray.length;counter++){
+            Person newStr=personArray[counter];
+            result.append(newStr);
+        }
+        String output=result.toString();
         // identify array's type
         // identify array's variable-name
 
@@ -55,7 +75,7 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
-        return result;
+        return output;
     }
 
 
